@@ -1,0 +1,10 @@
+display_information:
+  name: My Slack App
+features:
+  bot_user:
+    display_name: My Slack Bot
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - chat:write.customize

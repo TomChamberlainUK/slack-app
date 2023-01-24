@@ -1,0 +1,30 @@
+{
+  "name": "slack-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/app/build",
+    "update": "node scripts/app/update",
+    "validate": "node scripts/app/validate",
+    "message": "node scripts/message/message",
+    "message:formatted": "node scripts/message/formatted",
+    "message:schedule": "node scripts/message/schedule",
+    "message:reply": "node scripts/message/reply",
+    "message:update": "node scripts/message/update",
+    "message:delete": "node scripts/message/delete",
+    "help": "node scripts/help",
+    "init": "node scripts/init"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0"
+  }
+}
