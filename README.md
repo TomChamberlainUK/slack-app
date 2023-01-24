@@ -1,5 +1,15 @@
 # Slack Bot
 
+> Please note that most of below is currently outdated and should be ignored. It will be updated soon.
+> ### To get started: ###
+> - Clone/download this repository
+> - Ensure Node 18.13.0 or above is installed (nvm users can run `nvm use`)
+> - Install: `npm i`
+> - Run the command `npm run init`
+> - Follow the onscreen prompts
+
+---
+
 ## Getting Started
 
 ### Installation
