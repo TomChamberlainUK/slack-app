@@ -14,7 +14,6 @@
     "message:reply": "node scripts/message/reply",
     "message:update": "node scripts/message/update",
     "message:delete": "node scripts/message/delete",
-    "help": "node scripts/help",
     "init": "node scripts/init"
   },
   "keywords": [],
