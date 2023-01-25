@@ -13,6 +13,15 @@ dotenv.config();
   console.log('Updating message...');
   try {
 
+    // Env check
+    if (!process.env.SLACK_CHANNEL_ID) {
+      throw new Error('Missing env variable: SLACK_CHANNEL_ID — Could not acquire Slack channel ID');
+    }
+
+    if (!process.env.SLACK_BOT_ACCESS_TOKEN) {
+      throw new Error('Missing env variable: SLACK_BOT_ACCESS_TOKEN — Could not acquire Slack bot user access token');
+    }
+
     /**
      * Parse message and timestamp from the CLI
      * The script will look for the --message (-m) and --timestamp (-t) flags

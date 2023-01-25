@@ -14,14 +14,13 @@ dotenv.config();
 
     console.log(`Updating app...`);
 
-    /**
-     * An access token is required for any changes to Slack app configuration, these only last 12 hours but can be obtained with a refresh token.
-     * In the Your App Configuration Tokens section click the Generate Token button, select the relevant workspace, then click generate.
-     * Your workspace will then appear in the list. Click the Copy button under the Refresh Token heading to copy it to your clipboard.
-     * @see https://api.slack.com/apps
-     */
+    // Env check
     if (!process.env.SLACK_CONFIG_REFRESH_TOKEN) {
       throw new Error('Missing env variable: SLACK_CONFIG_REFRESH_TOKEN — Could not acquire Slack refresh token to obtain access token access token');
+    }
+
+    if (!process.env.SLACK_APP_ID) {
+      throw new Error('Missing env variable: SLACK_APP_ID — Could not acquire Slack app ID for updating');
     }
 
     // Load local manifest.yml file and parse into a Javascript object.
