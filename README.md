@@ -2,6 +2,28 @@
 
 A small application to get Slack apps up at running with ease.
 
+This application lets you build and maintain Slack apps, as well as providing some test functionality around messaging via bots.
+
+All requests are authorised via OAuth2.
+
+A diagram that covers how everything works can be found [here](#diagram)
+
+## Contents
+
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Quick Setup](#quick-setup)
+  - [Manual Setup](#manual-setup)
+- [General Use](#general-use)
+  - [Environment Variables](#environment-variables)
+  - [Scripts](#scripts)
+    - [Building & Maintaining Apps](#building--maintaining-apps)
+    - [Messaging via Bots](#messaging-via-bots)
+  - [Example Scripts](#example-scripts)
+- [Other](#other)
+  - [Diagram](#diagram)
+
+
 ## Getting Started
 
 ### Installation
@@ -78,3 +100,9 @@ thread-init | Post a message to a channel and save the timestamp to allow update
 thread-update | Update an existing message on a channel using a saved timestamp
 thread-reply | Reply to an existing message on a channel using a saved timestamp
 thread-fallback | A Node 14 compatible script to post a message on a channel
+
+## Other
+
+### Diagram
+
+![Diagram of Slack app infrastructure](./slack-app-diagram.png)
