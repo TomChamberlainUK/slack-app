@@ -1,12 +1,12 @@
 # Slack Bot
 
-A small application to get Slack apps up at running with ease.
+A small application to get Slack apps up and running with ease.
 
 This application lets you build and maintain Slack apps, as well as providing some test functionality around messaging via bots.
 
 All requests are authorised via OAuth2.
 
-A diagram that covers how everything works can be found [here](#diagram)
+A diagram that covers how everything works can be found [here](#diagram).
 
 ## Contents
 
